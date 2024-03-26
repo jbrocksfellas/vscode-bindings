@@ -1,0 +1,121 @@
+[
+    // Move to the previous/next editor.
+    {
+      "key": "cmd+k",
+      "command": "workbench.action.nextEditor"
+    },
+    {
+      "key": "cmd+j",
+      "command": "workbench.action.previousEditor"
+    },
+  
+    // Move active editor left or right (useful for full-stack web dev).
+    {
+      "key": "cmd+ctrl+j",
+      "command": "moveActiveEditor",
+      "args": {
+        "to": "left"
+      }
+    },
+    {
+      "key": "cmd+ctrl+k",
+      "command": "moveActiveEditor",
+      "args": {
+        "to": "right"
+      }
+    },
+  
+    // Traverse VSCode IntelliSense suggestions with vim keybindings.
+    {
+      "key": "cmd+j",
+      "command": "selectNextSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+      "key": "cmd+k",
+      "command": "selectPrevSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+  
+    // Traverse VSCode quick open options with vim keybindings.
+    {
+      "key": "cmd+j",
+      "command": "workbench.action.quickOpenSelectNext",
+      "when": "inQuickOpen"
+    },
+    {
+      "key": "cmd+k",
+      "command": "workbench.action.quickOpenSelectPrevious",
+      "when": "inQuickOpen"
+    },
+  
+    // VSCode terminal commands.
+    {
+      "key": "cmd+alt+n",
+      "command": "workbench.action.terminal.newInActiveWorkspace"
+    },
+    {
+      "key": "cmd+enter",
+      "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+      "key": "cmd+alt+enter",
+      "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+      "key": "cmd+alt+k",
+     "command": "workbench.action.terminal.kill",
+      "when": "terminalFocus"
+    },
+    {
+      "key": "cmd+j",
+      "command": "workbench.action.terminal.focusNext",
+      "when": "terminalFocus" 
+    },
+    {
+      "key": "cmd+k",
+      "command": "workbench.action.terminal.focusPrevious",
+      "when": "terminalFocus" 
+    },
+    // FILE TREE
+    {
+      "key": "ctrl+e",
+      "command": "workbench.action.toggleSidebarVisibility",
+    },
+    {
+      "key": "ctrl+e",
+      "command": "workbench.files.action.focusFilesExplorer",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "n",
+      "command": "explorer.newFile",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "key": "r",
+      "command": "renameFile",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "deleteFile",
+      "key": "d",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "key": "shift+n",
+      "command": "explorer.newFolder",
+      "when": "explorerViewletFocus"
+    },
+    // Ensure that tab button works in vim.
+    {
+      "key": "tab",
+      "command": "tab",
+      "when": "editorTextFocus && !editorTabMovesFocus"
+    },
+    {
+      "key": "shift+tab",
+      "command": "outdent",
+      "when": "editorTextFocus && !editorTabMovesFocus"
+    }
+  ]  
