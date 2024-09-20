@@ -11,16 +11,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "codeium.enableConfig": {
-    "*": false
-  },
-  "[caddyfile]": {
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": true
-  },
   "emmet.includeLanguages": {
     "html": "pug"
   },
@@ -137,5 +127,16 @@
       "before": ["p"],
       "commands": ["editor.action.clipboardPasteAction"]
     }
-  ]
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "codeium.enableConfig": {
+    "*": false
+  },
+  "[caddyfile]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true
+  },
+  "editor.fontSize": 12,
 }
