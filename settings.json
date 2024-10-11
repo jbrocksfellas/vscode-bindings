@@ -100,9 +100,14 @@
 
     // File tree
     {
-      "before": ["leader", "n", "e"],
-      "commands": ["workbench.explorer.fileView.focus"]
+      // Pressing the leader key (Spacebar) followed by e toggles the sidebar visibility.
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
+    // {
+    //   "before": ["leader", "n", "e"],
+    //   "commands": ["workbench.explorer.fileView.focus"]
+    // },
     {
       "before": ["<leader>", "c", "a"],
       "commands": ["editor.action.quickFix"]
