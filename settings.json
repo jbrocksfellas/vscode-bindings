@@ -1,8 +1,10 @@
 {
-  // "editor.tabCompletion": "on",
-  "editor.formatOnSave": true,
+  "editor.fontSize": 12,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -26,14 +28,21 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[caddyfile]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true
+  },
+  "codeium.enableConfig": {
+    "*": false
+  },
   "redhat.telemetry.enabled": false,
   "prisma.showPrismaDataPlatformNotification": false,
   "prettier.requireConfig": true,
   "git.openRepositoryInParentFolders": "never",
   "editor.linkedEditing": true,
-
   "editor.lineNumbers": "relative",
-  // vim setup
+
+  // VIM setup
   // VS Code automatically highlights selected words.
   // "vim.hlsearch": false,
   "vim.leader": "<Space>",
@@ -50,29 +59,15 @@
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": ["v", "n"],
-      "after": ["v", "g", "_", "y"]
-    },
-    {
       // find the source definition instead of the .d.ts file
       // 'f'ind the source 'd'efinition
       "before": ["f", "d"],
       "commands": ["typescript.goToSourceDefinition"]
     },
-    {
-      // df is easier to hit than gd
-      // go to the 'd'e'f'inition
-      "before": ["d", "f"],
-      "after": ["g", "d"]
-    },
-    {
-      "before": ["d", "n"],
-      "after": ["d", "g", "_"]
-    }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<C-n>"],
+      "before": ["<C-n>"], // Ctrl+N
       "commands": [":nohl"]
     },
 
@@ -133,15 +128,4 @@
       "commands": ["editor.action.clipboardPasteAction"]
     }
   ],
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "codeium.enableConfig": {
-    "*": false
-  },
-  "[caddyfile]": {
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": true
-  },
-  "editor.fontSize": 12,
 }
