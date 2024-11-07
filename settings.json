@@ -32,6 +32,10 @@
     "editor.insertSpaces": false,
     "editor.formatOnSave": true
   },
+  "makefile.configureOnOpen": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "codeium.enableConfig": {
     "*": false
   },
@@ -55,15 +59,14 @@
       "after": ["<Esc>", "l"]
     }
   ],
-  "vim.insertModeKeyBindingsNonRecursive": [
-  ],
+  "vim.insertModeKeyBindingsNonRecursive": [],
   "vim.normalModeKeyBindings": [
     {
       // find the source definition instead of the .d.ts file
       // 'f'ind the source 'd'efinition
       "before": ["f", "d"],
       "commands": ["typescript.goToSourceDefinition"]
-    },
+    }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -112,8 +115,16 @@
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.enableCppGlobally"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.cpp.disableenabled"]
     }
-  ], 
+  ],
   "vim.visualModeKeyBindings": [
     // Move selected lines while staying in visual mode
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
@@ -127,5 +138,5 @@
       "before": ["p"],
       "commands": ["editor.action.clipboardPasteAction"]
     }
-  ],
+  ]
 }

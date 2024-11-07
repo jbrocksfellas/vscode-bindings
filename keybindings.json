@@ -125,8 +125,7 @@
     "key": "shift+tab",
     "command": "outdent",
     "when": "editorTextFocus && !editorTabMovesFocus"
-  }
-  ,
+  },
   {
     // Focus the active editor group (text editor) when the terminal is focused
     "key": "ctrl+;",
@@ -138,5 +137,5 @@
     "key": "ctrl+;",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "explorerViewletVisible && filesExplorerFocus"
-  },
+  }
 ]
